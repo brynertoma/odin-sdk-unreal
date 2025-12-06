@@ -16,8 +16,11 @@ UCLASS(ClassGroup = (Odin), Blueprintable, BlueprintType, meta = (BlueprintSpawn
 class ODIN_API UOdinSynthComponent : public USynthComponent
 {
     GENERATED_BODY()
+
+  public:
     UOdinSynthComponent(const FObjectInitializer& ObjectInitializer);
 
+  private:
     // Called when synth is created
     virtual bool Init(int32& SampleRate) override;
 
